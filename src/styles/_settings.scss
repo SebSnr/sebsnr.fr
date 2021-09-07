@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 $font-1: 'Roboto', sans-serif;
-$color-1: #0062ff;
+$color-1: #0042ad;
 $color-2: #2a2727;
 $color-3: #5c5353;
 
@@ -21,3 +21,7 @@ body {
 li {
 	list-style: none;
 }
+
+// variables 
+
+$nav-height: 3.7rem;

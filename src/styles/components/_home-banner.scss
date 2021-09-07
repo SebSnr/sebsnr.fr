@@ -1,0 +1,55 @@
+.home-banner {
+	&__left {
+		// border: red solid 1px;
+		position: relative;
+		width: 50%;
+
+		@include media-breakpoint-down(md) {
+			margin: auto;
+			width: 100%;
+		}
+
+		img {
+			z-index: 10;
+			// position: absolute;
+			position: relative;
+			// top: -14px;
+			// left: 380px;
+			margin-top: 0;
+			margin-left: 154px;
+			width: 70%;
+			height: 100%;
+			object-fit: cover;
+
+			@include media-breakpoint-down(md) {
+				margin: auto;
+				width: 100%;
+			}
+		}
+
+		&::before {
+			position: absolute;
+			content: "";
+			height: calc(100% + #{$nav-height});
+			width: 1000%;
+			background-color: $color-1;
+			top: -$nav-height;
+			left: -1000%;
+			z-index: 1;
+		}
+		&::after {
+			position: absolute;
+			content: "";
+			height: calc(100% + #{$nav-height});
+			width: 50%;
+			background-color: $color-1;
+			top: -$nav-height;
+			left: 0;
+			z-index: 1;
+		}
+	}
+	&__right {
+		border: solid violet 1px;
+		width: 50%;
+	}
+}

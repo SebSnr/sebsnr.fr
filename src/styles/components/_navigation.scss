@@ -1,7 +1,10 @@
 $primary: $color-1;
 
 .header {
-    // height: rem;
+    .container {
+		height: $nav-height;
+		// border: green solid 2px;
+	}
 }
 
 a {
@@ -37,14 +40,15 @@ a {
 	.navbar-brand {
         // padding-top: 1rem;
         position: relative;
+		z-index: 2;
         margin-top: 0;
         margin-bottom: 0;
 		color: white;
 		background-color: $color-2;
-                padding-top: 0.9rem;
-				padding-bottom: 0.9rem;
-				padding-left: 50px;
-				padding-right: 50px;
+        padding-top: 0.9rem;
+        padding-bottom: 0.9rem;
+        padding-left: 50px;
+        padding-right: 50px;
 		text-transform: uppercase;
 		font-weight: 600;
 		&:hover, &:focus, &:active{
@@ -75,7 +79,7 @@ a {
 				padding-bottom: 1.2rem;
 				padding-left: 30px;
 				padding-right: 30px;
-				font-weight: 600;
+				font-weight: 500;
 				color: $color-2;
 				position: relative;
 				// text-transform: uppercase;
@@ -98,7 +102,8 @@ a {
 			&--contact {
 				background-color: $color-1;
 				.nav-link {
-					color: white;
+                    color: white;
+                    font-weight: 600;
                     &:hover, &:focus, &:active {
                         color: darken($color: #FFFFFF, $amount: 20);
                     }
