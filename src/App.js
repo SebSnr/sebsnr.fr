@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import {BrowserRouter, Switch, Route, Redirect} from "react-router-dom" 
+// pages
+import HomePage from "./pages/HomePage"
+// utils
+
+// store authentication data globally
+export const AuthContext = React.createContext()
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+
+		<BrowserRouter>
+				<Switch>
+					<Route path="/" exact component={HomePage} />
+					{/* <Route component={NotFoundPage} /> */}
+					{/* <Redirect to='/login' component={LoginPage}  /> */}
+				</Switch>
+			</BrowserRouter>
+
+	) 
+	
 }
 
-export default App;
+export default App
