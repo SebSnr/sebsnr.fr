@@ -110,6 +110,7 @@ a {
 				&:focus,
 				&:active {
 					color: $primary;
+					font-weight: 600;
 				}
 				opacity: 1 !important;
 				@include media-breakpoint-down(md) {
@@ -135,6 +136,7 @@ a {
 					&:focus,
 					&:active {
 						color: darken($color: #ffffff, $amount: 20);
+
 					}
 				}
 

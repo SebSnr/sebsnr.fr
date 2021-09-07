@@ -8,4 +8,18 @@
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
+    &:hover,
+	&:focus,
+	&:active {
+		// color: darken($color: #ffffff, $amount: 20);
+        color: white;
+        background-color: $color-1;
+        border: solid 2px $color-1;
+        box-shadow: -3px 2px 32px -4px rgba(0,0,0,0.39);
+-webkit-box-shadow: -3px 2px 32px -4px rgba(0,0,0,0.39);
+-moz-box-shadow: -3px 2px 32px -4px rgba(0,0,0,0.39);
+
+	}
+
+
 }

@@ -3,6 +3,7 @@
 		// border: red solid 1px;
 		position: relative;
 		width: 50%;
+        margin-bottom: 2rem;
 
 		@include media-breakpoint-down(md) {
 			margin: auto;
@@ -85,7 +86,7 @@
 			line-height: 1.7rem;
 		}
 
-		@include media-breakpoint-down(md) {
+		@include media-breakpoint-down(lg) {
 			width: 100%;
 		}
 	}
