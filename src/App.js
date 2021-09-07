@@ -3,13 +3,16 @@ import {BrowserRouter, Switch, Route, Redirect} from "react-router-dom"
 // pages
 import HomePage from "./pages/HomePage"
 // utils
+import { RemoveBtnFocusOutline } from "./utils/removeBtnFocusOutline"
 
 // store authentication data globally
 export const AuthContext = React.createContext()
 
 function App() {
-	return (
 
+	RemoveBtnFocusOutline() // css function
+
+	return (
 		<BrowserRouter>
 				<Switch>
 					<Route path="/" exact component={HomePage} />
@@ -17,7 +20,6 @@ function App() {
 					{/* <Redirect to='/login' component={LoginPage}  /> */}
 				</Switch>
 			</BrowserRouter>
-
 	) 
 	
 }
