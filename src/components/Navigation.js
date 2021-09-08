@@ -7,10 +7,6 @@ export default function Navigation() {
 		<header className="header">
 			<nav className="navbar navbar-expand-lg ftco-navbar-light" id="ftco-navbar">
 				<div className="container">
-					{/* <a className="navbar-brand" href="index.html">
-						SEB.S 
-					</a>
-                     */}
                     <NavLink className="navbar-brand" to="/" title="Retour accueil">
                         SEB.S
 					</NavLink>

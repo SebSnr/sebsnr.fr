@@ -58,9 +58,10 @@ a {
 		&:hover,
 		&:focus,
 		&:active {
-			color: darken($color: #ffffff, $amount: 18);
-			text-shadow: 2px 2px 2px rgba(206,206,206,0.17);
-
+			text-shadow: 2px 2px 2px rgba(206, 206, 206, 0.17);
+			font-weight: 600;
+			background-color: white;
+			color: $color-2;
 		}
 		@include media-breakpoint-down(md) {
 			padding-left: 38px;
@@ -76,20 +77,23 @@ a {
 		}
 	}
 
+	.navbar-toggler {
+		z-index: 30;
+	}
+
 	.navbar-nav {
 		// border: yellow solid 1px;
 		background-color: #ffffff;
-
 		position: relative;
 		z-index: 20;
 
 		width: 80%;
 		float: right;
 
-
 		// augmenter la width du navbar
 		// transform: translateX(-$padding-page);
 		// width: calc(100% + 2 *#{$padding-page});
+		// width: 80%;
 
 		@include media-breakpoint-down(md) {
 			padding-bottom: 10px;
@@ -113,10 +117,10 @@ a {
 				&:active {
 					color: $primary;
 					font-weight: 500;
-					text-shadow: 2px 2px 2px rgba(0,0,0,0.17);
+					text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.17);
 				}
 				opacity: 1 !important;
-				@include media-breakpoint-down(md) {
+				@include media-breakpoint-down(lg) {
 					text-align: end;
 					// padding-left: 90%;
 					padding-right: 2rem;
@@ -138,20 +142,27 @@ a {
 					&:hover,
 					&:focus,
 					&:active {
-						color: darken($color: #ffffff, $amount: 18);
-						text-shadow: 2px 2px 2px rgba(206,206,206,0.17);
-
+						// color: darken($color: #ffffff, $amount: 18);
+						// text-shadow: 2px 2px 2px rgba(206,206,206,0.17);
+						font-weight: 600;
+						background-color: $color-2;
+						color: white;
+						text-shadow: 2px 2px 2px rgba(206, 206, 206, 0.17);
 					}
 				}
 
-				@include media-breakpoint-down(md) {
+				@include media-breakpoint-down(lg) {
 					background-color: transparent;
 					.nav-link {
 						color: $color-2;
+						font-weight: 600;
 						&:hover,
 						&:focus,
 						&:active {
 							color: $color-1;
+							background-color: transparent;
+							font-weight: 600 ;
+							text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.17);
 						}
 					}
 				}

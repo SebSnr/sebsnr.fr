@@ -1,9 +1,9 @@
 .home-banner {
+	margin-bottom: 4rem;
 	&__left {
 		// border: red solid 1px;
 		position: relative;
 		width: 50%;
-        margin-bottom: 2rem;
 
 		@include media-breakpoint-down(md) {
 			margin: auto;
@@ -17,7 +17,7 @@
 			// top: -14px;
 			// left: 380px;
 			margin-top: 0;
-			margin-left: 154px;
+			margin-left: 130px;
 			width: 70%;
 			height: 100%;
 			object-fit: cover;
