@@ -8,7 +8,7 @@ export default function Navigation() {
 			<nav className="navbar navbar-expand-lg ftco-navbar-light" id="ftco-navbar">
 				<div className="container">
 					{/* <a className="navbar-brand" href="index.html">
-						SEB.S
+						SEB.S 
 					</a>
                      */}
                     <NavLink className="navbar-brand" to="/" title="Retour accueil">
@@ -52,38 +52,3 @@ export default function Navigation() {
 		</header>
 	)
 }
-
-
-
-
-
-
-
-
-
-
-
-	{/* <div className="social-media order-lg-last">
-							<p className="mb-0 d-flex">
-								<a href="#" className="d-flex align-items-center justify-content-center">
-									<span className="fa fa-facebook">
-										<i className="sr-only">Facebook</i>
-									</span>
-								</a>
-								<a href="#" className="d-flex align-items-center justify-content-center">
-									<span className="fa fa-twitter">
-										<i className="sr-only">Twitter</i>
-									</span>
-								</a>
-								<a href="#" className="d-flex align-items-center justify-content-center">
-									<span className="fa fa-instagram">
-										<i className="sr-only">Instagram</i>
-									</span>
-								</a>
-								<a href="#" className="d-flex align-items-center justify-content-center">
-									<span className="fa fa-dribbble">
-										<i className="sr-only">Dribbble</i>
-									</span>
-								</a>
-							</p>
-						</div> */}

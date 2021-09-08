@@ -1,0 +1,93 @@
+.footer {
+	background-color: lighten($color: $color-2, $amount: 5);
+
+	h4,
+	p,
+	div,
+	a,
+	.fa-github,
+	.fa-linkedin {
+		color: white;
+	}
+
+	&__contact {
+		display: flex;
+		flex-wrap: wrap;
+		padding-top: 4rem;
+		padding: 5%;
+
+		&__links {
+			width: 40%;
+			border: white 1pw solid;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			@include media-breakpoint-down(md) {
+				width: 100%;
+				margin-top: 2rem;
+				margin-bottom: 0rem;
+				h4 {
+					padding-bottom: 2rem;
+				}
+			}
+
+			h4 {
+				text-align: center;
+				font-size: 2rem;
+				font-weight: bold;
+				margin-bottom: 1rem;
+			}
+			li {
+				line-height: 3rem;
+			}
+			.fa-github,
+			.fa-linkedin {
+				vertical-align: middle;
+				margin-right: 1rem;
+				font-size: 2.3rem;
+			}
+			a {
+				text-decoration: underline;
+				font-size: 1.2rem;
+				&:hover,
+				&:focus,
+				&:active {
+					color: black;
+					text-shadow: 2px 2px 2px rgba(206, 206, 206, 0.17);
+				}
+			}
+		}
+
+		&__mail {
+			width: 60%;
+			border: white 1pw solid;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+
+			@include media-breakpoint-down(md) {
+				margin-top: 3rem;
+				margin-bottom: 3rem;
+				width: 100%;
+			}
+			p {
+				text-align: center;
+			}
+			button {
+				line-height: 2.8rem;
+			}
+		}
+	}
+
+	&__mentions {
+		background-color: $color-2;
+		display: flex;
+		justify-content: space-around;
+		text-transform: uppercase;
+		* {
+			font-size: 0.7rem;
+		}
+	}
+}
