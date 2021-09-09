@@ -1,4 +1,3 @@
-import {Button} from "bootstrap"
 import React from "react"
 import {Link} from "react-router-dom"
 
@@ -10,16 +9,18 @@ export default function Footer() {
 					<h4>Contact</h4>
 					<ul>
 						<li>
-							<Link to={{pathname: "https://github.com/SebSnr/"}} target="_blank">
-							<i class="fab fa-github"></i>
-								SebSnr
+							<Link to={{pathname: "https://www.linkedin.com/in/sebastiensanner/"}} target="_blank">
+								<i class="fab fa-circle fa-linkedin"></i>
+								sebastiensanner
 							</Link>
 						</li>
 						<li>
-							<i class="fab fa-linkedin"></i>
-							<Link to={{pathname: "https://www.linkedin.com/in/sebastiensanner/"}} target="_blank">
-								sebastiensanner
-							</Link>
+								Retrouvez encore plus de codes sur : <br />
+								<Link to={{pathname: "https://github.com/SebSnr/"}} target="_blank">
+									{/* <i class="fab fa-github"></i> */}
+									<img src="./images/Octocat.png" alt="GitHub" className="github" />
+									SebSnr
+								</Link>
 						</li>
 					</ul>
 				</div>
@@ -27,9 +28,7 @@ export default function Footer() {
 					<p>
 						Vous avez aimé mon travail ? Vous souhaitez échanger autour du web, d'une opportunité ou de votre passion ? <br />
 						<br />
-						N'hésitez pas à me contacter via Linkedin ou directement par mail.
-						<br />
-						<br />
+						Vous pouvez me contacter via Linkedin ou directement par mail.
 					</p>
 					<button
 						onClick={(e) => {

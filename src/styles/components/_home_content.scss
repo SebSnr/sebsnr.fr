@@ -2,14 +2,26 @@
 	display: flex;
 	flex-wrap: wrap;
 
+	&--reverse {
+		@include media-breakpoint-down(lg) {
+			flex-direction: column-reverse;
+		}
+	}
+
 	&__left,
 	&__right {
 		width: 50%;
-		height: 40rem;
-		@include media-breakpoint-down(md) {
+		height: 27rem;
+		@include media-breakpoint-down(lg) {
 			width: 100%;
+			height: auto;
 		}
 	}
+
+	// &__left--big,
+	// &__right--big {
+	// 	height: 25rem;
+	// }
 
 	&__left {
 		overflow: hidden;
@@ -19,7 +31,7 @@
 			height: 110%;
 			object-fit: cover;
 		}
-		@include media-breakpoint-down(md) {
+		@include media-breakpoint-down(lg) {
 			height: 20rem;
 		}
 	}
@@ -30,18 +42,6 @@
 		flex-direction: column;
 		justify-content: space-evenly;
 		margin: 0;
-
-		@include media-breakpoint-down(md) {
-			height: 100%;
-			padding-top: 3rem;
-			padding-bottom: 3rem;
-			a {
-				margin-top: 1.7 rem;
-			}
-            ul li {
-                width: 100%;
-            }
-		}
 
 		h3 {
 			text-transform: uppercase;
@@ -54,18 +54,31 @@
 			font-size: 1.7rem;
 			line-height: 1.7rem;
 			color: $color-1;
-            margin-bottom: 2rem;
+			margin-bottom: 2rem;
 		}
 
-        ul {
-            height: 6rem;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            li {
-                list-style-type: color;
-                width: 46%;
-            }
-        }
+		ol {
+			height: 6rem;
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			li {
+				list-style-type: color;
+				// width: 46%;
+			}
+		}
+		@include media-breakpoint-down(md) {
+			height: 100%;
+			padding-top: 3rem;
+			padding-bottom: 3rem;
+			a {
+				margin-top: 1.7 rem;
+			}
+		}
+		@include media-breakpoint-down(lg) {
+			ol {
+				height: auto;
+			}
+		}
 	}
 }
