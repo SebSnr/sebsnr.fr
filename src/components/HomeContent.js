@@ -3,7 +3,7 @@ import {Link} from "react-router-dom"
 
 export default function HomeContent() {
 	return (
-		<div className="home-container">
+		<div className="home-container" id="mesprojets">
 			{/* Groupoamania */}
 			<div className="home-content">
 				<div className="home-content__left home-content__left--big">
@@ -60,14 +60,14 @@ export default function HomeContent() {
 				</div>
 				<div className="home-content__right home-content__right--big">
 					<h3>Ohmyfood</h3>
-					<div className="home-content__right__goal">Dynamiser avec des animations CSS</div>
+					<div className="home-content__right__goal">Développer et dynamiser un site gastronomique </div>
 					<p>
 						🖥️ HTML, CSS, SASS, animations<br />
 					</p>
 					<ol>
 						<li>intégration de la maquette</li>
 						<li>création des différentes animations css</li>
-						<li>custom des favoris, affichage des menus, sélection des plats, loading-page, </li>
+						<li>custom des favoris, affichage des menus, sélection des plats, loading-page</li>
 					</ol>
 					<Link to={{pathname: "https://sebsnr.github.io/P3--Ohmyfood/index.html"}} target="_blank" className="btn btn--1">
 						Découvrir

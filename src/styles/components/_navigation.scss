@@ -1,11 +1,11 @@
-$primary: $color-1;
+// .contai {
+// 	width: 100%;
+// 	border: solid 1px red;
+// 	display: flex;
+// 	justify-content: space-between;
 
+// }
 .header {
-	.container {
-		max-width: 100%;
-	}
-}
-
 a {
 	// transition: 0.3s all ease;
 	color: $primary;
@@ -15,6 +15,7 @@ a {
 		outline: none !important;
 		box-shadow: none;
 	}
+}
 }
 
 .ftco-navbar-light {
@@ -82,18 +83,11 @@ a {
 	}
 
 	.navbar-nav {
-		// border: yellow solid 1px;
 		background-color: #ffffff;
 		position: relative;
 		z-index: 20;
-
 		width: 80%;
 		float: right;
-
-		// augmenter la width du navbar
-		// transform: translateX(-$padding-page);
-		// width: calc(100% + 2 *#{$padding-page});
-		// width: 80%;
 
 		@include media-breakpoint-down(md) {
 			padding-bottom: 10px;
@@ -161,9 +155,23 @@ a {
 						&:active {
 							color: $color-1;
 							background-color: transparent;
-							font-weight: 600 ;
+							font-weight: 600;
 							text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.17);
 						}
+					}
+				}
+			}
+
+			&--cv {
+				.nav-link {
+					font-weight: bold;
+					background-color: rgba(207, 206, 206, 0.15);
+					&:hover,
+					&:focus,
+					&:active {
+						// color: darken($color: #ffffff, $amount: 18);
+						// text-shadow: 2px 2px 2px rgba(206,206,206,0.17);
+						font-weight: 600;
 					}
 				}
 			}

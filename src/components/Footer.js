@@ -3,7 +3,7 @@ import {Link} from "react-router-dom"
 
 export default function Footer() {
 	return (
-		<div className="footer">
+		<div className="footer" id="contact">
 			<div className="footer__contact container">
 				<div className="footer__contact__links">
 					<h4>Contact</h4>
@@ -26,7 +26,7 @@ export default function Footer() {
 				</div>
 				<div className="footer__contact__mail">
 					<p>
-						Vous avez aimé mon travail ? Vous souhaitez échanger autour du web, d'une opportunité ou de votre passion ? <br />
+						Vous avez aimé mon travail ? Envie de discuter chaleureusement autour du web ou de votre passion ? <br />
 						<br />
 						Vous pouvez me contacter via Linkedin ou directement par mail.
 					</p>

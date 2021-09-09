@@ -185,9 +185,9 @@ export default function SkillsCarousel() {
 
 
 	return (
-        <div className="carousel--skills">
-		<div className="container carousel__wrap">
-			<div className="carousel__inner">
+        <div className="carousel--skills" >
+		<div className="container carousel__wrap" >
+			<div className="carousel__inner" id="mescompetences">
 
 				<button className="carousel__btn carousel__btn--prev" onClick={() => prevClick()}>
 					<i className="carousel__btn-arrow carousel__btn-arrow--left" />
