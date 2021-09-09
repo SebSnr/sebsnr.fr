@@ -1,6 +1,7 @@
 import React from "react"
 import {NavLink} from "react-router-dom"
 import {HashLink} from "react-router-hash-link"
+import {Link} from "react-router-dom"
 
 export default function Navigation() {
 	return (
@@ -41,9 +42,12 @@ export default function Navigation() {
 								</HashLink>
 							</li>
 							<li className="nav-item nav-item--cv">
-								<NavLink className="nav-link" to="/CV">
+								<NavLink className="nav-link" to="/CV_Sebastien_Sanner_DEV_JAVASCRIPT.pdf" target="_blank">
 									CV
 								</NavLink>
+								{/* <Link to={{pathname: "https://sebsnr.github.io/P3--Ohmyfood/index.html"}} target="_blank" className="btn btn--1">
+									CV
+								</Link> */}
 							</li>
 							<li className="nav-item nav-item--contact">
 								<HashLink to="#contact" className="nav-link">

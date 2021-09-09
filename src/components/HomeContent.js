@@ -27,7 +27,7 @@ export default function HomeContent() {
 						<li>validation des tests unitaires</li>
 						<li>mise en ligne</li>
 					</ol>
-					<Link to={{pathname: "https://www.linkedin.com/in/sebastiensanner/"}} target="_blank" className="btn btn--1">
+					<Link to={{pathname: "http://groupomani.sebsnr.fr/login"}} target="_blank" className="btn btn--1">
 						Découvrir
 					</Link>
 				</div>

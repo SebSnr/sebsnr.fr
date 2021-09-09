@@ -3,8 +3,23 @@
 	flex-wrap: wrap;
 
 	&--reverse {
+
+		.home-content__right {
+			padding-left: 14%;
+		}
+		
 		@include media-breakpoint-down(lg) {
 			flex-direction: column-reverse;
+			.home-content__right {
+				padding-left: 5%;
+			}
+		}
+		@include media-breakpoint-down(xl) {
+			.home-content__right {
+				ol {
+					height: 6rem;
+				}
+			}
 		}
 	}
 
@@ -71,6 +86,7 @@
 			height: 100%;
 			padding-top: 3rem;
 			padding-bottom: 3rem;
+			padding-left: 14%;
 			a {
 				margin-top: 1.7 rem;
 			}
@@ -78,6 +94,8 @@
 		@include media-breakpoint-down(lg) {
 			ol {
 				height: auto;
+				padding-left: 14%;
+
 			}
 		}
 	}
