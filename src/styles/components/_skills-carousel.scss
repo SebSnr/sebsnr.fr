@@ -4,6 +4,7 @@ $slide-width: 14rem;
 .carousel--skills {
     background-color: $color-2;
     position: relative;
+    z-index: 100;
     &::after {
         content: "";
         background-color: $color-2;
@@ -18,8 +19,6 @@ $slide-width: 14rem;
 }
 
 .carousel__wrap {
-
-    
     align-items: center;
     display: flex;
     flex: 1;
@@ -31,7 +30,7 @@ $slide-width: 14rem;
     height: 12rem;
 
     @include media-breakpoint-down(md) {
-        width: 50%;
+        width: 60%;
     }
     
     
@@ -43,6 +42,7 @@ $slide-width: 14rem;
     height: $slide-width;
     position: relative;
     width: calc(#{$slide-width * 5});
+
 }
 
 .carousel__container {
@@ -66,6 +66,11 @@ $slide-width: 14rem;
     width: calc(#{($slide-count + 0.5) * $slide-width * 2});
     // width: 100%;
     animation: 40s slidy infinite linear both;
+
+    @include media-breakpoint-down(md) {
+        animation: 10s slidy infinite linear both;
+    }
+
     // transform-origin: right;
 
 }
@@ -156,11 +161,11 @@ $slide-width: 14rem;
     transform: translateY(-50%);
 
     &--prev {
-        left: -5rem;
+        left: -3rem;
     }
 
     &--next {
-        right: -5rem;
+        right: -3rem;
     }
 }
 

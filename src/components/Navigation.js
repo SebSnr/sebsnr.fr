@@ -1,15 +1,14 @@
 import React from "react"
 import {NavLink} from "react-router-dom"
 import {HashLink} from "react-router-hash-link"
-import {Link} from "react-router-dom"
 
 export default function Navigation() {
 	return (
 		<header className="header">
 			<nav className="navbar navbar-expand-lg ftco-navbar-light" id="ftco-navbar">
 				<div className="container">
-					<NavLink className="navbar-brand" to="/" title="accueil">
-						SEB.S
+					<NavLink className="navbar-brand" to="/" /*title="accueil"*/>
+						SEB.SNR
 					</NavLink>
 
 					<button

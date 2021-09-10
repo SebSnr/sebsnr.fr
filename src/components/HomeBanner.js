@@ -14,10 +14,11 @@ export default function HomeBanner() {
 						<span className="nom">Sanner</span>
 					</div>
 					<h1>Développeur web Javascript React / NodeJS</h1>
+					<blockquote className="introduction">
+						“  Féru d’informatique, et également de sport, de voyage, je suis de nature entreprenante et bienveillante.
+					</blockquote>
 					<blockquote>
-						“  Féru d’informatique, et également de sport, de voyage et bien d’autres, je suis de nature entreprenant et bienveillant.
-						<br />
-						Véritable couteau suisse de par mes multiples expériences, je suis un éternel apprenant. La programmation m’apporte ainsi ma dose de challenges et de réflexion.  “
+						Véritable couteau suisse, de par mes multiples expériences, je suis un éternel apprenant. La programmation m’apporte ainsi ma dose de challenge et de réflexion.  “
 					</blockquote>
 					<HashLink to="#mesprojets" className="btn btn--1">Mes projets</HashLink>
 				
