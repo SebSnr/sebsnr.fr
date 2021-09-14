@@ -9,24 +9,24 @@ export default function Footer() {
 					<h4>Contact</h4>
 					<ul>
 						<li>
+							<Link to={{pathname: "https://github.com/SebSnr/"}} target="_blank">
+								{/* <i class="fab fa-github"></i> */}
+								<img src="./images/Octocat.png" alt="GitHub" className="github" />
+								SebSnr
+							</Link>
+						</li>
+						<li>
 							<Link to={{pathname: "https://www.linkedin.com/in/sebastiensanner/"}} target="_blank">
 								<i class="fab fa-circle fa-linkedin"></i>
 								sebastiensanner
 							</Link>
 						</li>
-						<li>
-								Retrouvez encore plus de codes sur : <br />
-								<Link to={{pathname: "https://github.com/SebSnr/"}} target="_blank">
-									{/* <i class="fab fa-github"></i> */}
-									<img src="./images/Octocat.png" alt="GitHub" className="github" />
-									SebSnr
-								</Link>
-						</li>
 					</ul>
 				</div>
 				<div className="footer__contact__mail">
 					<p>
-						Vous avez aimé mon travail ? Envie de discuter chaleureusement autour du web ou de votre passion ? <br />
+						Vous avez aimé mon travail ? Vous avez des questions ?<br />
+						Ou tout simplement envie de discuter ?<br />
 						<br />
 						Vous pouvez me contacter via Linkedin ou directement par mail.
 					</p>
