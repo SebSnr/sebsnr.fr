@@ -36,19 +36,19 @@ export default function HomeContent() {
 			<div className="home-content home-content--reverse">
 				<div className="home-content__right">
 					<div>
-					<h3>Orinoco</h3>
-					<div className="home-content__right__goal">Développer le front-end d'un site e-commerce</div>
-					<p>HTML, CSS, SASS, JavaScript</p>
-					<ol>
-						<li>développement du site</li>
-						<li>envoi des requêtes via l'API</li>
-						<li>ajout/suppression/modification du panier</li>
-						<li>personnalisation UX grâce au local storage</li>
-						<li>interface responsive</li>
-					</ol>
-					<Link to={{pathname: "https://github.com/SebSnr/P5--Orinoco"}} target="_blank" className="btn btn--1">
-						Découvrir <i class="fab fa-github"></i>
-					</Link>
+						<h3>Orinoco</h3>
+						<div className="home-content__right__goal">Développer le front-end d'un site e-commerce</div>
+						<p>HTML, CSS, SASS, JavaScript</p>
+						<ol>
+							<li>développement du site</li>
+							<li>envoi des requêtes via l'API</li>
+							<li>ajout/suppression/modification du panier</li>
+							<li>personnalisation UX grâce au local storage</li>
+							<li>interface responsive</li>
+						</ol>
+						<Link to={{pathname: "https://github.com/SebSnr/P5--Orinoco"}} target="_blank" className="btn btn--1">
+							Découvrir <i class="fab fa-github"></i>
+						</Link>
 					</div>
 				</div>
 				<div className="home-content__left">
@@ -80,7 +80,7 @@ export default function HomeContent() {
 
 			<div className="home-content home-content--reverse">
 				<div className="home-content__right">
-					<div className="testo">
+					<div>
 						<h3>Reservia</h3>
 						<div className="home-content__right__goal">Développer le front-end d'un site de réservation</div>
 						<p>HTML, CSS</p>
