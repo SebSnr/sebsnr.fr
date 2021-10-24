@@ -1,12 +1,13 @@
-## site web sebsnr.fr
-
-Mon site portfolio 
-
-http://sebsnr.fr 🌐
-
-
+## Site portfolio sebsnr.fr
+<br>
+🌐 http://sebsnr.fr 
+<br>
+<br>
+[sebsnr.fr - Développeur web.pdf](https://github.com/SebSnr/sebsnr.fr/files/7406016/sebsnr.fr.-.Developpeur.web.pdf)
+<br>
+<br>
 🛠 HTML / CSS / SASS / Booststrap / React ⚛️
-
+<br><br><br>
 
 ![image](https://user-images.githubusercontent.com/78140833/138606834-8207383c-5a4b-4c04-b213-f3480e767e27.png)
 ![image](https://user-images.githubusercontent.com/78140833/138606868-01eb863e-e896-41fd-836e-1e232a3117e6.png)
