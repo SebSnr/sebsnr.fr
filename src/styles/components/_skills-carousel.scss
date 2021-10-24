@@ -1,194 +1,160 @@
+// variables
 $slide-count: 5;
 $slide-width: 14rem;
 
 .carousel--skills {
-    background-color: $color-2;
-    position: relative;
-    z-index: 100;
-    &::after {
-        content: "";
-        background-color: $color-2;
-        // border: 1px solid red;
-        width: 1.5rem;
-        height: 1.5rem;
-        position: absolute;
-        top: -0.6rem;
-        left: 49%;
-        transform: rotate(45deg);
-    }
+	background-color: $color-2;
+	position: relative;
+	z-index: 100;
+
+	&::after {
+		content: "";
+		background-color: $color-2;
+		width: 1.5rem;
+		height: 1.5rem;
+		position: absolute;
+		top: -0.6rem;
+		left: 49%;
+		transform: rotate(45deg);
+	}
 }
 
 .carousel__wrap {
-    align-items: center;
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    position: relative;
-    width: 70%;
-    // left: 50%;
-    // transform: translateX(-50%);
-    height: 12rem;
+	align-items: center;
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	position: relative;
+	width: 70%;
+	height: 12rem;
 
-    @include media-breakpoint-down(md) {
-        width: 60%;
-    }
-    
-    
-    // border: 1px solid red;
+	@include media-breakpoint-down(md) {
+		width: 60%;
+	}
 }
 
 .carousel__inner {
-    // border: 1px solid red;
-    height: $slide-width;
-    position: relative;
-    width: calc(#{$slide-width * 5});
-
+	height: $slide-width;
+	position: relative;
+	width: calc(#{$slide-width * 5});
 }
 
 .carousel__container {
-    // border: 1px solid green;
-
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
 }
 
 .carousel__slide-list {
-    // border: 1px solid violet;
-    height: 100%;
-    // left: 50%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    transform: translateX(-45%);
-    width: calc(#{($slide-count + 0.5) * $slide-width * 2});
-    // width: 100%;
-    animation: 40s slidy infinite linear both;
+	height: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	transform: translateX(-45%);
+	width: calc(#{($slide-count + 0.5) * $slide-width * 2});
+	animation: 40s slidy infinite linear both;
 
-    @include media-breakpoint-down(md) {
-        animation: 10s slidy infinite linear both;
-    }
-
-    // transform-origin: right;
-
+	@include media-breakpoint-down(md) {
+		animation: 10s slidy infinite linear both;
+	}
 }
 
 .carousel__slide-item {
-    // border: 1px solid orange;
-    // display: inline-block;
-    height: calc(1*#{$slide-width});
-    width: calc(0.8*#{$slide-width});
-    // margin-right: 5rem;
-    // margin-left: 5rem;
-    padding: 1rem;
-    position: absolute;
-    transition: all 0.3s;
+	height: calc(1 *#{$slide-width});
+	width: calc(0.8 *#{$slide-width});
+	padding: 1rem;
+	position: absolute;
+	transition: all 0.3s;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .carousel__slide-item-img-link {
-    // cursor: zoom-in;
-    display: flex;
-    // height: 100%;
-    // overflow: hidden;
-    position: relative;
-    width: 100%;
+	display: flex;
+	position: relative;
+	width: 100%;
 
-    img {
-        height: 70%;
-        object-fit: cover;
-        transition: all 0.5s ease;
-        width: 70%;
-        
-    }
+	img {
+		height: 70%;
+		object-fit: cover;
+		transition: all 0.5s ease;
+		width: 70%;
+	}
 
-    // &::after {
-    //     align-items: center;
-    //     background: rgba(black, 0.5);
-    //     color: white;
-    //     content: 'read more';
-    //     display: flex;
-    //     height: 100%;
-    //     justify-content: center;
-    //     opacity: 0;
-    //     position: absolute;
-    //     transition: all 0.5s ease;
-    //     width: 100%;
-    // }
+	&:hover {
+		&::after {
+			opacity: 1;
+		}
 
-    &:hover {
-        &::after {
-            opacity: 1;
-        }
-
-        img {
-            transform: scale(1.3);
-        }
-    }
+		img {
+			transform: scale(1.3);
+		}
+	}
 }
 
 .carousel-slide-item__body {
-    bottom: -2.5rem;
-    height: 10%;
-    position: absolute;
+	bottom: -2.5rem;
+	height: 10%;
+	position: absolute;
 
-    h4 {
-        margin: 0.7rem 0 0;
-        text-transform: uppercase;
-    }
+	h4 {
+		margin: 0.7rem 0 0;
+		text-transform: uppercase;
+	}
 
-    p {
-        font-size: 1.2rem;
-        line-height: 1.3;
-        margin: 0.7rem 0 0;
-    }
+	p {
+		font-size: 1.2rem;
+		line-height: 1.3;
+		margin: 0.7rem 0 0;
+	}
 }
 
 .carousel__btn {
-    align-items: center;
-    background: 0;
-    border: 0;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+	align-items: center;
+	background: 0;
+	border: 0;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
 
-    &--prev {
-        left: -3rem;
-    }
+	&--prev {
+		left: -3rem;
+	}
 
-    &--next {
-        right: -3rem;
-    }
+	&--next {
+		right: -3rem;
+	}
 }
 
 .carousel__btn-arrow {
-    border: solid lighten($color: $color-2, $amount: 30);
-    border-width: 0 0.2rem 0.2rem 0;
-    padding: 3px;
-    height: 1rem;
-    width: 1rem;
-    z-index: 10;
+	border: solid lighten($color: $color-2, $amount: 30);
+	border-width: 0 0.2rem 0.2rem 0;
+	padding: 3px;
+	height: 1rem;
+	width: 1rem;
+	z-index: 10;
 
-    &--left {
-        transform: rotate(135deg);
-    }
+	&--left {
+		transform: rotate(135deg);
+	}
 
-    &--right {
-        transform: rotate(-45deg);
-    }
+	&--right {
+		transform: rotate(-45deg);
+	}
 }
 
-
 @keyframes slidy {
-    0% { left: 100%; }
-    100% { left: 10%; }
-  }
-
+	0% {
+		left: 100%;
+	}
+	100% {
+		left: 10%;
+	}
+}

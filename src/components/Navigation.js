@@ -10,7 +10,6 @@ export default function Navigation() {
 					<NavLink className="navbar-brand" to="/" /*title="accueil"*/>
 						SEB.SNR
 					</NavLink>
-
 					<button
 						className="navbar-toggler"
 						type="button"
@@ -25,18 +24,13 @@ export default function Navigation() {
 					</button>
 					<div className="collapse navbar-collapse flex-grow-0" id="ftco-nav">
 						<ul className="navbar-nav ml-auto mr-md-3">
-							{/* <li className="nav-item active">
-								<NavLink className="nav-link" to="/">
-									Accueil
-								</NavLink>
-							</li> */}
 							<li className="nav-item">
 								<HashLink to="#mescompetences" className="nav-link">
 									Compétences
 								</HashLink>
 							</li>
 							<li className="nav-item">
-							<HashLink to="#mesprojets" className="nav-link">
+								<HashLink to="#mesprojets" className="nav-link">
 									Projets
 								</HashLink>
 							</li>
@@ -44,9 +38,6 @@ export default function Navigation() {
 								<NavLink className="nav-link" to="/CV_Sebastien_Sanner_DEV_JAVASCRIPT.pdf" target="_blank">
 									CV
 								</NavLink>
-								{/* <Link to={{pathname: "https://sebsnr.github.io/P3--Ohmyfood/index.html"}} target="_blank" className="btn btn--1">
-									CV
-								</Link> */}
 							</li>
 							<li className="nav-item nav-item--contact">
 								<HashLink to="#contact" className="nav-link">

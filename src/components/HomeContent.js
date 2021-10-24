@@ -15,8 +15,6 @@ export default function HomeContent() {
 					<p>
 						Sass, Bootstrap, React ⚛️ <br />
 						NodeJs, Express, Sequelize, MySQL
-						{/* <br />
-					Création de la maquette, développement du site, création de l'API Rest et de la base de données, sécurisation des données, validation des tests unitaires, mise en ligne */}
 					</p>
 					<ol>
 						<li>création de la maquette</li>
@@ -77,7 +75,6 @@ export default function HomeContent() {
 			</div>
 
 			{/* Reservia */}
-
 			<div className="home-content home-content--reverse">
 				<div className="home-content__right">
 					<div>

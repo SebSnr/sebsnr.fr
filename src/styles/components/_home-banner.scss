@@ -1,7 +1,6 @@
 .home-banner {
 	margin-bottom: 4rem;
 	&__left {
-		// border: red solid 1px;
 		position: relative;
 		width: 50%;
 
@@ -12,10 +11,7 @@
 
 		img {
 			z-index: 10;
-			// position: absolute;
 			position: relative;
-			// top: -14px;
-			// left: 380px;
 			margin-top: 0;
 			margin-left: 189px;
 			width: 70%;
@@ -26,7 +22,6 @@
             -moz-box-shadow: 6px 12px 23px -4px rgba(0,0,0,0.76);
 
 			@include media-breakpoint-down(md) {
-				// margin: auto;
 				margin-left: auto;
 				margin-right: auto;
 				transform: translateX(50%);
@@ -43,24 +38,15 @@
 			top: -$nav-height;
 			left: -1000%;
 			z-index: 1;
+
 			@include media-breakpoint-down(lg) {
 				height: calc(100% + #{$nav-height});
 
 			}
 		}
-		// &::after {
-		// 	position: absolute;
-		// 	content: "";
-		// 	height: calc(100% + #{$nav-height});
-		// 	width: 50%;
-		// 	background-color: $color-1;
-		// 	top: -$nav-height;
-		// 	left: 0;
-		// 	z-index: 1;
-		// }
 	}
+
 	&__right {
-		// border: solid red 1px;
 		width: 50%;
 		padding: 5%;
 		display: flex;
@@ -90,7 +76,6 @@
 		}
 		.introduction {
 			margin-bottom: 0;
-			// border: red solid 1px;
 		}
 
 		@include media-breakpoint-down(lg) {

@@ -1,49 +1,28 @@
-// .contai {
-// 	width: 100%;
-// 	border: solid 1px red;
-// 	display: flex;
-// 	justify-content: space-between;
-
-// }
 .header {
-a {
-	// transition: 0.3s all ease;
-	color: $primary;
-	&:hover,
-	&:focus {
-		text-decoration: none !important;
-		outline: none !important;
-		box-shadow: none;
+	a {
+		color: $primary;
+		&:hover,
+		&:focus {
+			text-decoration: none !important;
+			outline: none !important;
+			box-shadow: none;
+		}
 	}
-}
 }
 
 .ftco-navbar-light {
-	// background: #fff !important;
-	// z-index: 3;
-	// padding: 10px 10px;
-	// border-radius: 5px;
-	// -webkit-box-shadow: 0px 5px 20px -17px rgba(0,0,0,0.34);
-	// -moz-box-shadow: 0px 5px 20px -17px rgba(0,0,0,0.34);
-	// box-shadow: 0px 5px 20px -17px rgba(0,0,0,0.34);
-
 	height: $nav-height;
-	// border: green solid 2px;
 	position: relative;
 	z-index: 20;
-
 	padding-top: 0;
 	padding-bottom: 0;
 
 	@include media-breakpoint-down(md) {
-		// background: $color-3 !important;
 		position: relative;
 		top: 0;
-		// padding: 10px 15px;
 	}
 
 	.navbar-brand {
-		// padding-top: 1rem;
 		position: relative;
 		z-index: 2;
 		margin-top: 0;
@@ -56,14 +35,7 @@ a {
 		padding-right: 50px;
 		text-transform: uppercase;
 		font-weight: 600;
-		// &:hover,
-		// &:focus,
-		// &:active {
-		// 	text-shadow: 2px 2px 2px rgba(206, 206, 206, 0.17);
-		// 	font-weight: 600;
-		// 	background-color: white;
-		// 	color: $color-2;
-		// }
+
 		@include media-breakpoint-down(md) {
 			padding-left: 38px;
 			&::before {
@@ -92,10 +64,10 @@ a {
 		@include media-breakpoint-down(md) {
 			padding-bottom: 10px;
 		}
+
 		> .nav-item {
 			position: relative;
 			z-index: 20;
-			// border: red 1px solid;
 			> .nav-link {
 				font-size: 0.9rem;
 				padding-top: 1.2rem;
@@ -106,21 +78,21 @@ a {
 				color: $color-2;
 				position: relative;
 				letter-spacing: 2px;
+				opacity: 1 !important;
+
 				&:hover,
 				&:focus,
 				&:active {
 					color: $primary;
 					font-weight: 500;
-					// text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.17);
 				}
-				opacity: 1 !important;
+
 				@include media-breakpoint-down(lg) {
 					text-align: end;
-					// padding-left: 90%;
 					padding-right: 2rem;
 					padding-top: 0.9rem;
 					padding-bottom: 0.9rem;
-					// color: rgba(255, 255, 255, 0.7);
+
 					&:hover,
 					&:focus,
 					&:active {
@@ -128,16 +100,17 @@ a {
 					}
 				}
 			}
+
 			&--contact {
 				background-color: $color-1;
+
 				.nav-link {
 					color: white;
 					font-weight: 600;
+
 					&:hover,
 					&:focus,
 					&:active {
-						// color: darken($color: #ffffff, $amount: 18);
-						// text-shadow: 2px 2px 2px rgba(206,206,206,0.17);
 						font-weight: 600;
 						background-color: $color-2;
 						color: white;
@@ -147,9 +120,11 @@ a {
 
 				@include media-breakpoint-down(lg) {
 					background-color: transparent;
+
 					.nav-link {
 						color: $color-2;
 						font-weight: 600;
+
 						&:hover,
 						&:focus,
 						&:active {
@@ -166,11 +141,10 @@ a {
 				.nav-link {
 					font-weight: bold;
 					background-color: rgba(207, 206, 206, 0.15);
+
 					&:hover,
 					&:focus,
 					&:active {
-						// color: darken($color: #ffffff, $amount: 18);
-						// text-shadow: 2px 2px 2px rgba(206,206,206,0.17);
 						font-weight: 600;
 					}
 				}
