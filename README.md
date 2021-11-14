@@ -1,6 +1,6 @@
 ## Site portfolio sebsnr.fr
 <br>
-🌐 http://sebsnr.fr 
+🌐 https://sebsnr.github.io/sebsnr.fr/
 <br>
 <br>
 [sebsnr.fr - Développeur web.pdf](https://github.com/SebSnr/sebsnr.fr/files/7406016/sebsnr.fr.-.Developpeur.web.pdf)
