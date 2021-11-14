@@ -12,9 +12,9 @@ function App() {
 	return (
 		<BrowserRouter>
 				<Switch>
-					<Route path="/" exact component={HomePage} />
+					<Route path="/" component={HomePage} />
 				</Switch>
-			</BrowserRouter>
+		</BrowserRouter>
 	) 
 	
 }

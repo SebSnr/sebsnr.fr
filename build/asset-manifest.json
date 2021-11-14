@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/sebsnr.fr/static/css/main.a6bc27ed.chunk.css",
-    "main.js": "/sebsnr.fr/static/js/main.519acc65.chunk.js",
-    "main.js.map": "/sebsnr.fr/static/js/main.519acc65.chunk.js.map",
+    "main.js": "/sebsnr.fr/static/js/main.7952acc3.chunk.js",
+    "main.js.map": "/sebsnr.fr/static/js/main.7952acc3.chunk.js.map",
     "runtime-main.js": "/sebsnr.fr/static/js/runtime-main.63e6942d.js",
     "runtime-main.js.map": "/sebsnr.fr/static/js/runtime-main.63e6942d.js.map",
     "static/js/2.3858e3fd.chunk.js": "/sebsnr.fr/static/js/2.3858e3fd.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.63e6942d.js",
     "static/js/2.3858e3fd.chunk.js",
     "static/css/main.a6bc27ed.chunk.css",
-    "static/js/main.519acc65.chunk.js"
+    "static/js/main.7952acc3.chunk.js"
   ]
 }
